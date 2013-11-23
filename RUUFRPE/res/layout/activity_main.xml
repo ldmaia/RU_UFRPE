@@ -1,0 +1,2554 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        
+        android:id="@+id/tabhostJA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/Almoco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TabHost
+                        android:id="@+id/tabhostAlmoco"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                
+                           	</TabWidget>
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <ScrollView
+                                    android:id="@+id/segundaAlmocoTab01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" >
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" >
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Prato_Principal_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Filé de Frango com Milho"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow02"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Prato_Principal_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Kibe com Hortelã"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow03"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Na_Grelha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Na_Grelha_Dieta"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco03"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Bife Grelhado"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow04"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Vegetariano"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Vegetariano"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco04"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Panqueca aos Três Queijos"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow05"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Guarnicao"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Guarnicao"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco05"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Inhame"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow06"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Sopa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Sopa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco06"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Caldo de Peixe"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow07"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Salada"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Salada_Crua"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco07"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Alcega com Cenoura Ralada"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow08"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Sobremesa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Sobremesa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco08"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Banana"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow09"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Suco_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Suco_1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco09"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Acerola"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/segundaAlmocoRow10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@+id/Suco_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Suco_2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/segundaAlmoco10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Abacaxi"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" >
+
+                                            <Button
+                                                android:id="@+id/button1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:onClick="onClick"
+                                                android:text="Button" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </ScrollView>
+
+                                <ScrollView
+                                    android:id="@+id/tercaAlmocoTab02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" >
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Filé de Frango com Milho"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow02"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Kibe com Hortelã"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow03"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Na_Grelha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Na_Grelha_Dieta"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco03"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Bife Grelhado"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow04"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Vegetariano"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Vegetariano"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco04"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Panqueca aos Três Queijos"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow05"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Guarnicao"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Guarnição"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco05"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Inhame"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow06"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sopa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sopa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco06"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Caldo de Peixe"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow07"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Salada"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Salada Crua"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco07"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Alcega com Cenoura Ralada"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow08"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sobremesa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sobremesa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco08"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Banana"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow09"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco09"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Acerola"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tercaAlmocoRow10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/tercaAlmoco10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Abacaxi"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </ScrollView>
+
+                                <ScrollView
+                                    android:id="@+id/quartaAlmocoTab03"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" >
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Filé de Frango com Milho"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow02"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Prato Principal 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Kibe com Hortelã"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow03"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Na_Grelha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Na Grelha (Dieta)"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco03"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Bife Grelhado"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow04"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Vegetariano"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Vegetariano"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco04"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Panqueca aos Três Queijos"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow05"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Guarnicao"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Guarnição"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco05"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Inhame"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow06"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sopa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sopa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco06"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Caldo de Peixe"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow07"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Salada"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Salada Crua"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco07"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Alcega com Cenoura Ralada"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow08"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sobremesa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sobremesa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco08"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Banana"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow09"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco09"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Acerola"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quartaAlmocoRow10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quartaAlmoco10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Abacaxi"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </ScrollView>
+
+                                <ScrollView
+                                    android:id="@+id/quintaAlmocoTab04"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" >
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Filé de Frango com Milho"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow02"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Prato Principal 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Kibe com Hortelã"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow03"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Na_Grelha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Na Grelha (Dieta)"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco03"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Bife Grelhado"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow04"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Vegetariano"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Vegetariano"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco04"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Panqueca aos Três Queijos"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow05"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Guarnicao"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Guarnição"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco05"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Inhame"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow06"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sopa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sopa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco06"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Caldo de Peixe"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow07"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Salada"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Salada Crua"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco07"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Alcega com Cenoura Ralada"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow08"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sobremesa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sobremesa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco08"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Banana"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow09"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco09"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Acerola"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/quintaAlmocoRow10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/quintaAlmoco10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Abacaxi"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </ScrollView>
+
+                                <ScrollView
+                                    android:id="@+id/sextaAlmocoTab05"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" >
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="@string/Prato_Principal_1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Filé de Frango com Milho"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow02"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Prato_Principal_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Prato Principal 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Kibe com Hortelã"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow03"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Na_Grelha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Na Grelha (Dieta)"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco03"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Bife Grelhado"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow04"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Vegetariano"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Vegetariano"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco04"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Panqueca aos Três Queijos"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow05"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Guarnicao"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Guarnição"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco05"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Inhame"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow06"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sopa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sopa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco06"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Caldo de Peixe"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow07"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Salada"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Salada Crua"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco07"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Alcega com Cenoura Ralada"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow08"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Sobremesa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Sobremesa"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco08"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Banana"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow09"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 1"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco09"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Acerola"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/sextaAlmocoRow10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" >
+
+                                            <TextView
+                                                android:id="@id/Suco_02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Suco 2"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            <TextView
+                                                android:id="@+id/sextaAlmoco10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:singleLine="false"
+                                                android:text="Abacaxi"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </ScrollView>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Jantar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                    
+                    <TabHost
+        android:id="@+id/tabhostJantar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                
+
+                <ScrollView
+                    android:id="@+id/segundaJantarTab01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Prato_Principal_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Filé de Frango com Milho"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Prato_Principal_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Kibe com Hortelã"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Na_Grelha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Na_Grelha_Dieta"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Bife Grelhado"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Vegetariano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Vegetariano"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Panqueca aos Três Queijos"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Guarnicao"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Guarnicao"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Inhame"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Sopa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Sopa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Caldo de Peixe"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Salada"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Salada_Crua"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Alcega com Cenoura Ralada"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Sobremesa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Sobremesa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Banana"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Suco_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Suco_1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar09"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Acerola"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/segundaJantarRow10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/Suco_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Suco_2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/segundaJantar10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Abacaxi"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <Button
+                                android:id="@+id/button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onClick"
+                                android:text="Button" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/tercaJantarTab02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Filé de Frango com Milho"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Kibe com Hortelã"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Na_Grelha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Na_Grelha_Dieta"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Bife Grelhado"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Vegetariano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Vegetariano"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Panqueca aos Três Queijos"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Guarnicao"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Guarnição"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Inhame"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sopa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sopa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Caldo de Peixe"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Salada"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Salada Crua"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Alcega com Cenoura Ralada"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sobremesa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sobremesa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Banana"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar09"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Acerola"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tercaJantarRow10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/tercaJantar10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Abacaxi"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+                        
+                        <TableRow
+                            android:id="@+id/tableRow101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <Button
+                                android:id="@+id/button101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="clear"
+                                android:text="Button2" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/quartaJantarTab03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Filé de Frango com Milho"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Prato Principal 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Kibe com Hortelã"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Na_Grelha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Na Grelha (Dieta)"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Bife Grelhado"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Vegetariano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Vegetariano"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Panqueca aos Três Queijos"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Guarnicao"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Guarnição"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Inhame"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sopa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sopa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Caldo de Peixe"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Salada"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Salada Crua"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Alcega com Cenoura Ralada"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sobremesa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sobremesa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Banana"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar09"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Acerola"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quartaJantarRow10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quartaJantar10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Abacaxi"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/quintaJantarTab04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Filé de Frango com Milho"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Prato Principal 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Kibe com Hortelã"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Na_Grelha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Na Grelha (Dieta)"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Bife Grelhado"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Vegetariano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Vegetariano"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Panqueca aos Três Queijos"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Guarnicao"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Guarnição"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Inhame"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sopa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sopa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Caldo de Peixe"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Salada"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Salada Crua"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Alcega com Cenoura Ralada"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sobremesa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sobremesa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Banana"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar09"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Acerola"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/quintaJantarRow10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/quintaJantar10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Abacaxi"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/sextaJantarTab05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="@string/Prato_Principal_1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Filé de Frango com Milho"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Prato_Principal_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Prato Principal 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Kibe com Hortelã"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Na_Grelha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Na Grelha (Dieta)"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Bife Grelhado"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Vegetariano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Vegetariano"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Panqueca aos Três Queijos"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Guarnicao"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Guarnição"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Inhame"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sopa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sopa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Caldo de Peixe"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Salada"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Salada Crua"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Alcega com Cenoura Ralada"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Sobremesa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Sobremesa"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar08"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Banana"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 1"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar09"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Acerola"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/sextaJantarRow10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@id/Suco_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Suco 2"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/sextaJantar10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="false"
+                                android:text="Abacaxi"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    
+</LinearLayout>
+
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

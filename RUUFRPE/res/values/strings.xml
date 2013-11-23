@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RU UFRPE</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="PP">Prato Principal</string>
+    <string name="Prato_Principal_1">Prato Principal 1</string>
+    <string name="Prato_Principal_2">Prato Principal 2</string>
+    <string name="Na_Grelha_Dieta">Na Grelha (Dieta)</string>
+    <string name="Vegetariano">Vegetariano</string>
+    <string name="Guarnicao">Guarnição</string>
+    <string name="Sopa">Sopa</string>
+    <string name="Salada_Crua">Salada Crua</string>
+    <string name="Sobremesa">Sobremesa</string>
+    <string name="Suco_1">Suco 1</string>
+    <string name="Suco_2">Suco 2</string>
+
+</resources>
+
