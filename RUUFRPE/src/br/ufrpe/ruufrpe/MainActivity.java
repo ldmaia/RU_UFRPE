@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
         
         setContentView(R.layout.activity_main);
         
-        ArrayAdapter teste = new ArrayAdapter(this, 0, quartaAlmoco);
+        ArrayAdapter<String> teste = new ArrayAdapter<String>(this,R.layout.row, quartaAlmoco);
         
         ListView a = (ListView) findViewById(R.id.listQuartaAlmoco);
         
