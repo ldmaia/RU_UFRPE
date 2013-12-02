@@ -22,29 +22,36 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.HorizontalScrollView;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnTabChangeListener{
 	
 	private TabHost tabsAlmoco;
 	private TabHost tabsJantar;
 	private TabHost tabsAJ;
-	String abc;
+	
+	ArrayList<String> nomesAlmoco = new ArrayList<String>();
 	
 	ArrayList<String> segundaAlmoco = new ArrayList<String>();
 	ArrayList<String> tercaAlmoco = new ArrayList<String>();
 	ArrayList<String> quartaAlmoco = new ArrayList<String>();
 	ArrayList<String> quintaAlmoco = new ArrayList<String>();
 	ArrayList<String> sextaAlmoco = new ArrayList<String>();
+	
+	ArrayList<String> nomesJantar = new ArrayList<String>();
 	
 	ArrayList<String> segundaJantar = new ArrayList<String>();
 	ArrayList<String> tercaJantar = new ArrayList<String>();
@@ -62,41 +69,11 @@ public class MainActivity extends Activity {
         
         setContentView(R.layout.activity_main);
         
-        ArrayAdapter<String> teste = new ArrayAdapter<String>(this,R.layout.row, quartaAlmoco);
-        
-        ListView a = (ListView) findViewById(R.id.listQuartaAlmoco);
-        
-        a.setAdapter(teste);
-        
-        tabsAJ = (TabHost) findViewById(R.id.tabhostJA);
-        
-        tabsAJ.setup();
-        
-        tabsAJ.addTab(tabsAJ.newTabSpec("tab1").setIndicator("Almoço").setContent(R.id.Almoco));
-        tabsAJ.addTab(tabsAJ.newTabSpec("tab2").setIndicator("Jantar").setContent(R.id.Jantar));
         
         
-        tabsAlmoco = (TabHost) findViewById(R.id.tabhostAlmoco);
+        setAdapters();
         
-        
-        tabsAlmoco.setup();
-        
-        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab1").setIndicator("Segunda").setContent(R.id.listSegundaAlmoco));
-        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab2").setIndicator("Terça").setContent(R.id.listTercaAlmoco));
-        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab3").setIndicator("Quarta").setContent(R.id.listQuartaAlmoco));
-        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab4").setIndicator("Quinta").setContent(R.id.listQuintaAlmoco));
-        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab5").setIndicator("Sexta").setContent(R.id.listSextaAlmoco));
-        
-        tabsJantar = (TabHost) findViewById(R.id.tabhostJantar);
-        
-        tabsJantar.setup();
-        
-        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab1").setIndicator("Segunda").setContent(R.id.listSegundaJantar));
-        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab2").setIndicator("Terça").setContent(R.id.listTercaJantar));
-        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab3").setIndicator("Quarta").setContent(R.id.listQuartaJantar));
-        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab4").setIndicator("Quinta").setContent(R.id.listQuintaJantar));
-        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab5").setIndicator("Sexta").setContent(R.id.listSextaJantar));
-        
+        setTabs();
         
         loadFromFile();
         
@@ -109,12 +86,141 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        //MenuItem a = (MenuItem) findViewById(R.id.Atualizar);
+        //a.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        		
         return true;
     }
     
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	
+            switch(item.getItemId()) {
+            /*
+             * Typically, an application registers automatically, so options
+             * below are disabled. Uncomment them if you want to manually
+             * register or unregister the device (you will also need to
+             * uncomment the equivalent options on options_menu.xml).
+             */
+
+            case R.id.Atualizar:
+                    
+                    onClick();
+                    return true;
+            default:
+                    return super.onOptionsItemSelected(item);
+            }
+    }
     
     
-    public void onClick(View view) {
+    public void setTabs() {
+    	tabsAJ = (TabHost) findViewById(R.id.tabhostJA);
+        
+        tabsAJ.setup();
+        
+        tabsAJ.addTab(tabsAJ.newTabSpec("tab1").setIndicator("Almoço").setContent(R.id.Almoco));
+        tabsAJ.addTab(tabsAJ.newTabSpec("tab2").setIndicator("Jantar").setContent(R.id.Jantar));
+        
+        tabsAlmoco = (TabHost) findViewById(R.id.tabhostAlmoco);
+        
+        tabsAlmoco.setup();
+        
+        tabsAlmoco.setOnTabChangedListener(this);
+        
+        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab1").setIndicator("Segunda").setContent(R.id.listSegundaAlmoco));
+        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab2").setIndicator("Terça").setContent(R.id.listTercaAlmoco));
+        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab3").setIndicator("Quarta").setContent(R.id.listQuartaAlmoco));
+        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab4").setIndicator("Quinta").setContent(R.id.listQuintaAlmoco));
+        tabsAlmoco.addTab(tabsAlmoco.newTabSpec("almocoTab5").setIndicator("Sexta").setContent(R.id.listSextaAlmoco));
+        
+        tabsJantar = (TabHost) findViewById(R.id.tabhostJantar);
+        
+        tabsJantar.setup();
+        
+        tabsJantar.setOnTabChangedListener(this);
+        
+        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab1").setIndicator("Segunda").setContent(R.id.listSegundaJantar));
+        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab2").setIndicator("Terça").setContent(R.id.listTercaJantar));
+        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab3").setIndicator("Quarta").setContent(R.id.listQuartaJantar));
+        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab4").setIndicator("Quinta").setContent(R.id.listQuintaJantar));
+        tabsJantar.addTab(tabsJantar.newTabSpec("JantarTab5").setIndicator("Sexta").setContent(R.id.listSextaJantar));
+    }
+    
+    public void setAdapters(){
+    	
+    	MyArrayAdapter adapterSegundaAlmoco = new MyArrayAdapter(this, segundaAlmoco, nomesAlmoco);
+    	MyArrayAdapter adapterTercaAlmoco = new MyArrayAdapter(this, tercaAlmoco, nomesAlmoco);
+    	MyArrayAdapter adapterQuartaAlmoco = new MyArrayAdapter(this, quartaAlmoco, nomesAlmoco);
+    	MyArrayAdapter adapterQuintaAlmoco = new MyArrayAdapter(this, quintaAlmoco, nomesAlmoco);
+    	MyArrayAdapter adapterSextaAlmoco = new MyArrayAdapter(this, sextaAlmoco, nomesAlmoco);
+    	
+    	MyArrayAdapter adapterSegundaJantar = new MyArrayAdapter(this, segundaJantar, nomesJantar);
+    	MyArrayAdapter adapterTercaJantar = new MyArrayAdapter(this, tercaJantar, nomesJantar);
+    	MyArrayAdapter adapterQuartaJantar = new MyArrayAdapter(this, quartaJantar, nomesJantar);
+    	MyArrayAdapter adapterQuintaJantar = new MyArrayAdapter(this, quintaJantar, nomesJantar);
+    	MyArrayAdapter adapterSextaJantar = new MyArrayAdapter(this, sextaJantar, nomesJantar);
+        
+        ListView listSegundaAlmoco = (ListView) findViewById(R.id.listSegundaAlmoco);
+        ListView listTercaAlmoco = (ListView) findViewById(R.id.listTercaAlmoco);
+        ListView listQuartaAlmoco = (ListView) findViewById(R.id.listQuartaAlmoco);
+        ListView listQuintaAlmoco = (ListView) findViewById(R.id.listQuintaAlmoco);
+        ListView listSextaAlmoco = (ListView) findViewById(R.id.listSextaAlmoco);
+        
+        ListView listSegundaJantar = (ListView) findViewById(R.id.listSegundaJantar);
+        ListView listTercaJantar = (ListView) findViewById(R.id.listTercaJantar);
+        ListView listQuartaJantar = (ListView) findViewById(R.id.listQuartaJantar);
+        ListView listQuintaJantar = (ListView) findViewById(R.id.listQuintaJantar);
+        ListView listSextaJantar = (ListView) findViewById(R.id.listSextaJantar);
+        
+        listSegundaAlmoco.setAdapter(adapterSegundaAlmoco);
+        listTercaAlmoco.setAdapter(adapterTercaAlmoco);
+        listQuartaAlmoco.setAdapter(adapterQuartaAlmoco);
+        listQuintaAlmoco.setAdapter(adapterQuintaAlmoco);
+        listSextaAlmoco.setAdapter(adapterSextaAlmoco);
+        
+        listSegundaJantar.setAdapter(adapterSegundaJantar);
+        listTercaJantar.setAdapter(adapterTercaJantar);
+        listQuartaJantar.setAdapter(adapterQuartaJantar);
+        listQuintaJantar.setAdapter(adapterQuintaJantar);
+        listSextaJantar.setAdapter(adapterSextaJantar);
+    }
+    
+    public void clearArrays(){
+    	
+    	nomesAlmoco.clear();
+		segundaAlmoco.clear();
+		tercaAlmoco.clear();
+		quartaAlmoco.clear();
+		quintaAlmoco.clear();
+		sextaAlmoco.clear();
+		
+		nomesJantar.clear();
+		segundaJantar.clear();
+		tercaJantar.clear();
+		quartaJantar.clear();
+		quintaJantar.clear();
+		sextaJantar.clear();
+    }
+    
+    @Override
+	public void onTabChanged(String id) {
+    	
+    	if(tabsAJ.getCurrentTab() == 0){
+    		int t = tabsAlmoco.getCurrentTab();
+    		HorizontalScrollView a = (HorizontalScrollView) findViewById(R.id.scrollAlmoco);
+    	    a.scrollTo((int) tabsAlmoco.getWidth()/10*t, 0);
+    	}
+    	else{
+    		int t = tabsJantar.getCurrentTab();
+    		HorizontalScrollView a = (HorizontalScrollView) findViewById(R.id.scrollJantar);
+    	    a.scrollTo((int) tabsAlmoco.getWidth()/10*t, 0);
+    	}
+		
+		
+		
+	}
+    
+    public void onClick() {
         DownloadWebPageTask task = new DownloadWebPageTask();
         task.execute();
 
@@ -131,12 +237,14 @@ public class MainActivity extends Activity {
 			
 				JSONObject session = objects.getJSONObject(i);
 				
+				nomesAlmoco.add(session.getString("nomesalmoco"));
 				segundaAlmoco.add(session.getString("segunda"));
 				tercaAlmoco.add(session.getString("terca"));
 				quartaAlmoco.add(session.getString("quarta"));
 				quintaAlmoco.add(session.getString("quinta"));
 				sextaAlmoco.add(session.getString("sexta"));
 				
+				nomesJantar.add(session.getString("nomesjantar"));
 				segundaJantar.add(session.getString("segundaj"));
 				tercaJantar.add(session.getString("tercaj"));
 				quartaJantar.add(session.getString("quartaj"));
@@ -148,12 +256,14 @@ public class MainActivity extends Activity {
 			catch(Exception e){
 				e.printStackTrace();
 			}
+    	setAdapters();
     	}
     
     public String readFromFile(){
     	String result;
     	SharedPreferences sharedPref = getSharedPreferences( "appData", Context.MODE_PRIVATE );
         result = sharedPref.getString("jsonArray", "Erro");
+        System.out.println(result);
         return result;
     }
     
@@ -173,6 +283,14 @@ public class MainActivity extends Activity {
     }
     
     private class DownloadWebPageTask extends AsyncTask<Void, Void, JSONArray> {
+    	protected final ProgressDialog a = new ProgressDialog(MainActivity.this);
+    	
+    	@Override
+    	protected void onPreExecute(){
+    		a.setMessage("Atualizando...");
+            a.setCancelable(false);
+            a.show();
+    	}
     	
     	@Override
     	protected JSONArray doInBackground(Void... params) {
@@ -189,15 +307,8 @@ public class MainActivity extends Activity {
                         String result = EntityUtils.toString(rp.getEntity());
                         objects = new JSONArray(result);
                         writeToFile(result);
+                        System.out.println(result);
                         
-                                
-                                
-                               
-                                
-                                /*Item item = new Item();
-                                item.name = session.getString("item");
-                                item.count = session.getString("quantity");
-                                items.add(item);*/
                         }
     		}
     		catch(Exception e){
@@ -208,19 +319,21 @@ public class MainActivity extends Activity {
     }
     	@Override
         protected void onPostExecute(JSONArray objects) {
+    		clearArrays();
     		for (int i = 0; i < objects.length(); i++) {
     			try{
     				
     			
     				JSONObject session = objects.getJSONObject(i);
     				
-                
+    				nomesAlmoco.add(session.getString("nomesalmoco"));
     				segundaAlmoco.add(session.getString("segunda"));
     				tercaAlmoco.add(session.getString("terca"));
     				quartaAlmoco.add(session.getString("quarta"));
     				quintaAlmoco.add(session.getString("quinta"));
     				sextaAlmoco.add(session.getString("sexta"));
     				
+    				nomesJantar.add(session.getString("nomesjantar"));
     				segundaJantar.add(session.getString("segundaj"));
     				tercaJantar.add(session.getString("tercaj"));
     				quartaJantar.add(session.getString("quartaj"));
@@ -228,19 +341,16 @@ public class MainActivity extends Activity {
     				sextaJantar.add(session.getString("sextaj"));
     			}
     			
+    		
     			catch(Exception e){
     				e.printStackTrace();
     			}
         }
-    		
-    		/*@Override
-    		public void onTabChanged(String id) {
-    			int t = tabsAlmoco.getCurrentTab();
-    			HorizontalScrollView a = (HorizontalScrollView) findViewById(R.id.scroller);
-    		    this.hScrollView.scrollTo(((int)(mTabHost.getWidth() * (position / ((double)(4 - 1))))), 0);
-    			
-    			
-    		}*/
+    		setAdapters();
+    		if (a.isShowing()) {
+                a.dismiss();
+
+            }
       }
     }
 }

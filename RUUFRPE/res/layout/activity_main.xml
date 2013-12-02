@@ -42,13 +42,23 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical" >
-
-                            <TabWidget
+                            
+                            <HorizontalScrollView
+                                android:id="@+id/scrollAlmoco"
+        						android:layout_width="wrap_content"
+        						android:layout_height="wrap_content"
+        						android:scrollbars="none">
+        						
+                                <TabWidget
                                 android:id="@android:id/tabs"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
                                 
-                           	</TabWidget>
+                           		</TabWidget>
+
+    						</HorizontalScrollView>
+
+                            
 
                             <FrameLayout
                                 android:id="@android:id/tabcontent"
@@ -107,11 +117,20 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-            </TabWidget>
+            <HorizontalScrollView
+       			android:id="@+id/scrollJantar"
+      			android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:scrollbars="none">
+        						
+             	<TabWidget
+              		android:id="@android:id/tabs"
+                  	android:layout_width="match_parent"
+                 	android:layout_height="wrap_content">
+                                
+                 	</TabWidget>
+
+    			</HorizontalScrollView>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"

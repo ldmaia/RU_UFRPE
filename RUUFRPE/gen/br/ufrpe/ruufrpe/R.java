@@ -25,24 +25,27 @@ public final class R {
     }
     public static final class id {
         public static final int Almoco=0x7f080001;
-        public static final int Jantar=0x7f080008;
-        public static final int action_settings=0x7f080012;
-        public static final int listQuartaAlmoco=0x7f080005;
-        public static final int listQuartaJantar=0x7f08000c;
-        public static final int listQuintaAlmoco=0x7f080006;
-        public static final int listQuintaJantar=0x7f08000d;
-        public static final int listSegundaAlmoco=0x7f080003;
-        public static final int listSegundaJantar=0x7f08000a;
-        public static final int listSextaAlmoco=0x7f080007;
-        public static final int listSextaJantar=0x7f08000e;
-        public static final int listTercaAlmoco=0x7f080004;
-        public static final int listTercaJantar=0x7f08000b;
-        public static final int nomePrato=0x7f080011;
-        public static final int prato=0x7f080010;
-        public static final int row=0x7f08000f;
+        public static final int Atualizar=0x7f080015;
+        public static final int Jantar=0x7f080009;
+        public static final int action_settings=0x7f080014;
+        public static final int listQuartaAlmoco=0x7f080006;
+        public static final int listQuartaJantar=0x7f08000e;
+        public static final int listQuintaAlmoco=0x7f080007;
+        public static final int listQuintaJantar=0x7f08000f;
+        public static final int listSegundaAlmoco=0x7f080004;
+        public static final int listSegundaJantar=0x7f08000c;
+        public static final int listSextaAlmoco=0x7f080008;
+        public static final int listSextaJantar=0x7f080010;
+        public static final int listTercaAlmoco=0x7f080005;
+        public static final int listTercaJantar=0x7f08000d;
+        public static final int nomePrato=0x7f080013;
+        public static final int prato=0x7f080012;
+        public static final int row=0x7f080011;
+        public static final int scrollAlmoco=0x7f080003;
+        public static final int scrollJantar=0x7f08000b;
         public static final int tabhostAlmoco=0x7f080002;
         public static final int tabhostJA=0x7f080000;
-        public static final int tabhostJantar=0x7f080009;
+        public static final int tabhostJantar=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
