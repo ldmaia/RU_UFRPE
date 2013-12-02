@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -311,6 +312,10 @@ public class MainActivity extends Activity implements OnTabChangeListener{
                         
                         }
     		}
+    		catch(UnknownHostException e){
+    			e.printStackTrace();
+    		}
+    		
     		catch(Exception e){
     			e.printStackTrace();
     		}
